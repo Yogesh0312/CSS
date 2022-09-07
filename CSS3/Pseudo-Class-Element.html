@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            font-size: 100px;
+            color: red;
+        }
+
+        p::first-line {
+            color: darkmagenta;
+
+        }
+
+        p::selection {
+            background-color: black;
+            color: red;
+        }
+
+        i::before {
+            content: "hello"
+        }
+
+        i::after {
+            content: "Hello";
+        }
+
+        .para {
+            background-color: blueviolet;
+        }
+
+        .para:hover {
+            background-color: maroon;
+            font-size: 15px;
+            color: white;
+        }
+
+        a:active {
+            color: magenta;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:link {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iusto similique, recusandae expedita itaque
+        veritatis enim quo, deleniti molestiae eveniet, delectus esse sapiente eius obcaecati maiores ipsam est laborum
+        beatae!
+    </p>
+
+    <i>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, reiciendis eum impedit ullam fugiat doloribus
+        quam animi est dolorem esse quos perspiciatis iure cumque eos iste ipsam voluptatem adipisci optio.
+    </i>
+    <br><br>
+
+    <div class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt adipisci ab, laudantium suscipit eum
+        harum facilis natus, itaque officiis qui! Explicabo cumque amet incidunt reprehenderit quae, ipsum maiores
+        voluptates.
+    </div>
+    <br>
+    <hr><br>
+    <div>
+        <a href="https://www.facebook.com">Google</a>
+    </div>
+
+
+
+</body>
+
+</html>
