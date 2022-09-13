@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            counter-reset: My-Counter;
+        }
+
+        h1::before {
+            content: "Section " counter(My-Counter) " 😃: ";
+            counter-increment: My-Counter;
+            color: red;
+        }
+
+        h1 {
+            counter-reset: subsection;
+        }
+
+        p::before {
+            content: counter(My-Counter) "." counter(subsection) " : ";
+            counter-increment: subsection;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque odit hic numquam cum iusto distinctio
+        laboriosam! At beatae laudantium omnis delectus officiis ab ad repellat nobis corporis doloribus numquam, ea a,
+        nihil porro laborum natus? Voluptate eaque quia rerum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque odit hic numquam cum iusto distinctio
+        laboriosam! At beatae laudantium omnis delectus officiis ab ad repellat nobis corporis doloribus numquam, ea a,
+        nihil porro laborum natus? Voluptate eaque quia rerum?</p>
+    <h1>Second Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dignissimos perferendis, voluptate sit,
+        reprehenderit placeat consequatur a, est possimus ab omnis. Accusantium qui, molestiae totam ab quidem
+        doloremque? Fuga, rerum aperiam! Doloribus minus quo blanditiis ex tempora ducimus, placeat accusantium!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque odit hic numquam cum iusto distinctio
+        laboriosam! At beatae laudantium omnis delectus officiis ab ad repellat nobis corporis doloribus numquam, ea a,
+        nihil porro laborum natus? Voluptate eaque quia rerum?</p>
+    <h1>Third Title</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, explicabo, sit aliquam ullam cum pariatur,
+        dicta voluptate sunt quis sed doloribus quaerat omnis aspernatur iusto aperiam ex repellat ad dolore incidunt.
+        Enim qui magnam ad quibusdam nisi numquam, dolorem repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque odit hic numquam cum iusto distinctio
+        laboriosam! At beatae laudantium omnis delectus officiis ab ad repellat nobis corporis doloribus numquam, ea a,
+        nihil porro laborum natus? Voluptate eaque quia rerum?</p>
+</body>
+
+</html>

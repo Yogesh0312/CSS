@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Flow</title>
+    <style>
+        .box1 {
+            border: solid 2px black;
+            height: 200px;
+            width: 300px;
+            float: left;
+            overflow: auto;
+
+        }
+
+        .box2 {
+            border: solid black 2px;
+            height: 100px;
+            width: 200px;
+            float: right;
+            margin-right: 500px;
+            overflow: scroll;
+        }
+
+        .box2 img {
+            height: 200px;
+            width: 300px;
+            opacity: .8;
+        }
+
+        .box3 {
+            border: solid black 2px;
+            height: 100px;
+            width: 200px;
+            clear: both;
+            overflow-x: hidden;
+
+        }
+
+        .box3 img {
+            height: 200px;
+            width: 300px;
+            opacity: .8;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>overflow auto</h1>
+    <div class="box1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum velit est porro facere? Nihil, odio iste
+            voluptate, fugiat earum esse rerum, laborum nisi cumque perferendis iure sit voluptatibus sequi eius!Lorem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ipsum recusandae tempore dolorem amet
+            assumenda voluptate nobis officiis, in similique nulla fugiat modi voluptatem voluptatibus! Itaque quam
+            fugiat asperiores quidem!</p>
+    </div>
+    <h1>over flow scroll</h1>
+    <div class="box2">
+        <img src="/MEDIA/img_1.jpg" alt="">
+    </div>
+
+    <div class="box3">
+        <img src="/MEDIA/img_1.jpg" alt="">
+    </div>
+    <h1>over flow x hidden</h1>
+</body>
+
+</html>

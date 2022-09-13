@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        body {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        div {
+            width: 43%;
+            float: left;
+            height: 200px;
+            margin: 20px;
+            border: 2px solid #ccc;
+        }
+
+        .one {
+            border: 3px solid red;
+            cursor: no-drop;
+        }
+
+        .two {
+            border: 3px solid green;
+            cursor: wait;
+        }
+
+        .three {
+            border: 3px solid blue;
+            cursor: url(/MEDIA/Share\ Logo.png), pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cursor</h1>
+    <div class="one">Don't Click</div>
+    <div class="two">Wait</div>
+    <div class="three">Nature Photo</div>
+</body>
+
+</html>
