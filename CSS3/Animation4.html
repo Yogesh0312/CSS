@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 4</title>
+    <style>
+        body {
+
+            background-color: black;
+            padding: 500px;
+            position: relative;
+            top: 200px;
+            box-sizing: border-box;
+
+        }
+
+        .a {
+            height: 150px;
+            width: 150px;
+            border: 5px solid yellow;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 50%;
+            padding: 15px;
+            position: absolute;
+            animation-name: yogesh;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            top: 11px;
+        }
+
+        .b {
+            height: 150px;
+            width: 150px;
+            border: 5px solid blue;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 50%;
+            padding: 15px;
+            position: absolute;
+            top: 1px;
+            animation-name: yogesh;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .c {
+            height: 150px;
+            width: 150px;
+            border: 5px solid red;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 50%;
+            padding: 15px;
+            position: absolute;
+            top: 15px;
+            animation-name: yogesh;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes yogesh {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</body>
+
+</html>
