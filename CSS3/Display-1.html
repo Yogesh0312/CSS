@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 1</title>
+   <style>
+     *{
+       margin: 0px;
+       padding: 0px; 
+    }
+    body{
+        font-size: 32px;
+        padding: 100px 40px 0px 40px;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+    p{
+        margin-top: 10px;
+        /* display: inline; */
+    }
+    p.one{
+        background-color: bisque;
+        /* display: none; */
+    }
+    p.one span{
+        background-color: cadetblue;
+        /* display: block; */
+        /* display: list-item; */
+        /* display: inherit; */
+        /* get display property of his parent element example paragraph */
+        /* display: initial; */
+        /* get original value of element */
+    }
+    p.two{
+        background-color: aquamarine;
+    }
+   </style>
+</head>
+
+<body>
+    <h1>Display</h1>
+    <p class="one">The display property specifies the display <span>behavior</span> of an element.</p>
+    <p class="two">Several types of values are used in the display property to control element display.</p>
+</body>
+
+</html>

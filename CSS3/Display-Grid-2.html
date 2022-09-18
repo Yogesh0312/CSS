@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            background-color: rgb(3, 3, 49);
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            margin: 100px;
+            height: 400px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .box1 {
+            background-color: green;
+            grid-row: 1/4;
+        }
+
+        .box2 {
+            background-color: green;
+            grid-column: 2/4;
+        }
+
+        .box3 {
+            background-color: tomato;
+            grid-column: 4/5;
+        }
+
+        .box4 {
+            background-color: yellowgreen;
+        }
+
+        .box5 {
+            background-color: tomato;
+        }
+
+        .box6 {
+            background-color: tomato;
+        }
+
+        .box7 {
+            background-color: yellowgreen;
+        }
+
+        .box8 {
+            background-color: greenyellow;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+        <div class="box5">Box5</div>
+        <div class="box6">Box6</div>
+        <div class="box7">Box7</div>
+        <div class="box8">Box8</div>
+    </div>
+</body>
+
+</html>
